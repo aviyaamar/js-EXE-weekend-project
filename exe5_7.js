@@ -1,11 +1,13 @@
+const word = 'hi,my name is aviya';
+
 const shortestWords = (str) =>{
 
-    str = str.split(' ')
+    str = str.split(' ');
 
-  return  str.reduce((acc,word) =>{
-       return  acc > word.length ? word.length: acc
-    },str[0].length)
+  return  str.reduce((a,word) =>{
+       return  a > word.length ? word.length: a;
+    },str[0].length);
 
-}
+};
 
-console.log(shortestWords('helloasfsasfsaf world lion!!!!!!!!!!'));
+console.log(shortestWords(word));
